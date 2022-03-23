@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Header title="Task Tracker" />
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facilis.</p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
+import Header from "../components/Header.vue"
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    Header
   },
 };
 </script>
+
+<style lang="scss">
+  $clr-white: #fff;
+  .home{
+    background: $clr-white;
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 50px rgba(0,0,0,0.1);
+    border-radius: 6px;
+  }
+</style>
